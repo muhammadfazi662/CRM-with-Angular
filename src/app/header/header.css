@@ -1,0 +1,9 @@
+.search-bar{
+    position: relative;
+    width: 100%;
+}
+.bi.bi-search{
+    position: absolute;
+    left:3%;
+    top: 16%;
+}

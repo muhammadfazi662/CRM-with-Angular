@@ -1,12 +1,24 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { Sidebar } from './sidebar/sidebar';
+import { Header } from './header/header';
+import { NewEntry } from './new-entry/new-entry';
+import { Pesticide } from './pages/pesticide/pesticide';
+import { Seed } from './pages/seed/seed';
+import { Photostate } from './pages/photostate/photostate';
+import { Dashboard } from './pages/dashboard/dashboard';
+import { Home } from './pages/home/home';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet,Sidebar,Header,NewEntry,Pesticide,Seed,Photostate,Dashboard,Home],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('crm');
+  showSideBar = true;
+  toggleSideBar(){
+    this.showSideBar = !this.showSideBar;
+  }
+  
+ 
 }

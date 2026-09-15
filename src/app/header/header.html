@@ -1,0 +1,18 @@
+<div class="container-fluid bg-white p-3">
+    <div class="row">
+        <div class="col-md-2">
+            <i class="bi bi-list"(click)="hideSideBar();"></i>
+        </div>
+        <div class="col-md-4 ">
+            <form class="d-flex position-relative w-100 " role="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control border border-2 border-light bg-light me-2" type="search" placeholder="      Search customers,SKUs,orders" aria-label="Search" />
+            </form>
+        </div>
+        <div class="col-md-2 "></div>
+        <div class="col-md-4 d-flex justify-content-end  ">
+            <i class="bi bi-bell-fill me-2 border border-dark rounded-circle p-2" style="color: #5b6b60;"></i>
+            <a routerLink="/new-entry"><button type="button" class="btn btn-dark"data-bs-toggle="modal" data-bs-target="#newEntryModal"><i class="bi bi-plus"></i>New Entry</button></a>
+        </div>
+    </div>
+</div>

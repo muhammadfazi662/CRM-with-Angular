@@ -1,0 +1,65 @@
+<!-- New Entry Modal -->
+<div class="modal fade text-center " id="newEntryModal" tabindex="-1" aria-labelledby="newEntryModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="newEntryModalLabel">
+
+                    New Entry
+
+                </h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
+            </div>
+
+
+            <!-- Modal Body -->
+            <div class="modal-body text-center">
+
+                <button type="button" class="btn btn-sm btn-outline-success"
+                    (click)="openPesticideForm()">Pesticide</button>
+                <button type="button" class="btn btn-sm btn-outline-success ms-2 me-2" (click)="openSeedForm()">Seed
+                </button>
+                <button type="button" class="btn btn-sm btn-outline-success"
+                    (click)="openPhtoStateForm()">Phtostate</button>
+                <div class="mt-3">
+                    @if(selectedForm === 'pestcide'){
+                    <app-pesticide-form></app-pesticide-form>
+                    }
+                    @else if (selectedForm === 'seed') {
+                    <app-seed-form></app-seed-form>
+                    }@else if (selectedForm === 'photostate') {
+                    <app-phtostate></app-phtostate>
+                    }@else {
+                    <app-pesticide-form></app-pesticide-form>
+                    }
+                </div>
+
+            </div>
+
+
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancal</button>
+
+                <button type="button" class="btn btn-secondary" style="background-color: #142a20;">
+
+                    Save
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

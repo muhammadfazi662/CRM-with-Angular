@@ -1,0 +1,89 @@
+<div class="container mt-5">
+
+    <!-- <h5 class="mb-4">Add Company</h5> -->
+
+    <form>
+
+        <!-- Row 1 -->
+        <div class="row">
+
+            <div class="col-md-6">
+                <label for="cname" class="form-label">
+                    Company Name
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Enter Company Name"
+                       id="cname">
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="companyType" class="form-label">
+                    Select Company Type
+                </label>
+
+                <select class="form-select" id="companyType">
+
+                    <option selected>Choose...</option>
+                    <option value="1">Pesticide</option>
+                    <option value="2">Fertilizer</option>
+                    <option value="3">Seed</option>
+
+                </select>
+            </div>
+
+        </div>
+
+
+        <!-- Row 2 -->
+        <div class="row mt-3">
+
+            <div class="col-md-6">
+                <label for="companyNo" class="form-label">
+                    Company No
+                </label>
+
+                <input type="number"
+                       class="form-control"
+                       placeholder="Enter Company Number"
+                       id="companyNo">
+            </div>
+
+
+            <div class="col-md-6">
+                <label for="companyAddress" class="form-label">
+                    Company Address
+                </label>
+
+                <input type="text"
+                       class="form-control"
+                       placeholder="Enter Company Address"
+                       id="companyAddress">
+            </div>
+
+        </div>
+
+        
+      
+    </form>
+     <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-6 d-flex justify-content-end">
+             <button type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                    Close
+                </button>
+
+                <button type="button"
+                        class="btn btn-success ms-1">
+                    Save 
+                </button>
+        </div>
+        <div class="col-2 ">
+             
+        </div>
+    </div>
+</div>

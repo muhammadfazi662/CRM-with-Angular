@@ -1,4 +1,4 @@
-<div class="left-sidebar ps-3 pe-2">
+<div class="left-sidebar ps-3 pe-2 d-flex flex-column">
     <div class="d-flex align-items-center">
         <!-- logo -->
         <div class="me-3">
@@ -13,64 +13,207 @@
                 Ledgerline
             </span>
             <div class="d-flex align-items-center gap-1">
-                <small class="text-secondary"style="font-size: 10px;">●</small>
-                <small class="text-secondary"style="font-size: 10px;">SHOP</small>
-                <small class="text-secondary"style="font-size: 10px;">CRM</small>
+                <small class="text-secondary" style="font-size: 10px;">●</small>
+                <small class="text-secondary" style="font-size: 10px;">SHOP</small>
+                <small class="text-secondary" style="font-size: 10px;">CRM</small>
             </div>
         </div>
     </div>
-    <div class="dropdown">
+    <!-- <div class="dropdown">
         <button class="btn btn-outline-light btn-sm mt-3  dropdown-toggle" type="button" id="dropdownMenu2"
             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <small>Active Register</small><br>
             <small>Kissan Agro & Seeds</small>
         </button>
-        <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenu2" style="background-color: transparent;border: none;">
-            <button class="dropdown-item border border-bottom-1 border-light " type="button" style="font-size: 14px;">Kissan Agro</button>
-            <button class="dropdown-item border border-bottom-1 border-light " type="button"style="font-size: 14px;">Seed</button>
-            <button class="dropdown-item text-warning  border border-bottom-1 border-light" type="button" style="font-size: 14px;">Add More</button>
+        <div class="dropdown-menu mt-2" aria-labelledby="dropdownMenu2"
+            style="background-color: transparent;border: none;">
+            <button class="dropdown-item border border-bottom-1 border-light " type="button"
+                style="font-size: 14px;">Kissan Agro</button>
+            <button class="dropdown-item border border-bottom-1 border-light " type="button"
+                style="font-size: 14px;">Seed</button>
+            <button class="dropdown-item text-warning  border border-bottom-1 border-light" type="button"
+                style="font-size: 14px;">Add More</button>
         </div>
-    </div>
+    </div> -->
     <div>
         <p class="text-light mt-3" style="font-size: 12px;">REGISTERS</p>
     </div>
-    <div>
+    <div class="mt-3 mb-3">
         <span class="text-warning">01</span>
-        <a routerLink="/dashboard"><span><i class="bi bi-columns-gap ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Dashboard</b></span></a>
+        <a routerLink="/dashboard"><span><i class="bi bi-columns-gap ms-3"
+                    style="color:white;width:16px;height:16px;"></i><b
+                    class="text-light ms-2 fw-1">Dashboard</b></span></a>
     </div>
-    <div class="mt-2">
+    <div class="mt-3 mb-3">
         <span class="text-warning fw-1">02</span>
-        <span><i class="bi bi-person ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Customer</b></span>
+        <!-- dropdown List -->
+        <a href="#addcustomer" class="text-decoration-none" data-bs-toggle="collapse" aria-expanded="false">
+            <a routerLink="customer-page" class="">
+                <span><i class="bi bi-person ms-3" style="color:white;width:16px;height:16px;"></i><b
+                        class="text-light ms-2 fw-1 ">Customer</b>
+                        <i class="bi bi-chevron-down ms-2 text-light"></i> 
+                </span>
+            </a>
+        </a>
+
+    <!-- Customer Menu -->
+        <div class="collapse" id="addcustomer">
+            <div class="ms-5 mt-2">
+                
+                     <a routerLink="customer-form" class="text-light text-decoration-none">
+                      <i class="bi bi-plus-circle me-2"></i>
+
+                    Add Customer
+                </a>
+                   
+            
+               
+            </div>
+        </div>
+
     </div>
-     <div class="mt-2">
+    <div class="mt-3 mb-3">
+
+        <!-- Number -->
         <span class="text-warning fw-1">03</span>
-        <a routerLink="/pesticide"><span><i class="bi bi-list ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Pesticide</b></span></a>
+
+        <!-- Pesticide Dropdown -->
+        <a href="#pesticideMenu" class="text-decoration-none" data-bs-toggle="collapse" aria-expanded="false">
+
+            <span>
+                <i class="bi bi-list ms-3" style="color:white;width:16px;height:16px;">
+                </i>
+
+                <a routerLink="pesticide">
+                    <b class="text-light ms-2 fw-1">
+                        Pesticide
+                    </b>
+                </a>
+
+                <i class="bi bi-chevron-down ms-2 text-light"></i>
+            </span>
+
+        </a>
+
+        <!-- Pesticide Menu -->
+        <div class="collapse" id="pesticideMenu">
+
+            <div class="ms-5 mt-2">
+
+                <!-- Add Pesticide -->
+                <a routerLink="pesticide-form" class="text-light text-decoration-none">
+
+                    <i class="bi bi-plus-circle me-2"></i>
+
+                    Add Pesticide
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-     <div class="mt-2">
+    <div class="mt-3 mb-3">
+
         <span class="text-warning fw-1">04</span>
-        <a routerLink="/seed"><span><i class="bi  bi-cart-check ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Seed</b></span></a>
+
+        <a href="#seedMenu" class="text-decoration-none" data-bs-toggle="collapse" aria-expanded="false">
+
+            <span>
+                <i class="bi bi-cart-check ms-3" style="color:white;width:16px;height:16px;"></i>
+
+                <a routerLink="seed">
+                    <b class="text-light ms-2 fw-1">
+                        Seed
+                    </b>
+                </a>
+
+                <i class="bi bi-chevron-down ms-2 text-light"></i>
+            </span>
+
+        </a>
+
+        <div class="collapse" id="seedMenu">
+
+            <div class="ms-5 mt-2">
+
+                <a routerLink="seed-form" class="text-light text-decoration-none" data-bs-toggle="modal"
+                    data-bs-target="#seedModal">
+
+                    <i class="bi bi-plus-circle me-2"></i>
+                    Add Seed
+
+                </a>
+
+            </div>
+
+        </div>
+
     </div>
-     <div class="mt-2">
+    <div class="mt-3 mb-3">
         <span class="text-warning fw-1">05</span>
-        <a routerLink="/photostate"><span><i class="bi  bi-receipt ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Photostate</b></span></a>
+        <a routerLink="/photostate"><span><i class="bi  bi-receipt ms-3"
+                    style="color:white;width:16px;height:16px;"></i><b
+                    class="text-light ms-2 fw-1">Photostate</b></span></a>
     </div>
-     <div>
+    <div class="mt-3 mb-3">
+
+        <!-- Company -->
+        <span class="text-warning fw-1">06</span>
+
+        <a href="#companyMenu" class="text-decoration-none" data-bs-toggle="collapse" aria-expanded="false">
+
+            <span>
+                <i class="bi bi-receipt ms-3" style="color:white;width:16px;height:16px;">
+                </i>
+
+                <b class="text-light ms-2 fw-1">
+                    Company
+                </b>
+
+                <i class="bi bi-chevron-down ms-2 text-light"></i>
+            </span>
+
+        </a>
+
+        <!-- Dropdown list -->
+        <div class="collapse" id="companyMenu">
+
+            <div class="ms-5 mt-2">
+                <a routerLink="/company-form" class="text-light text-decoration-none" data-bs-toggle="modal"
+                    data-bs-target="#companyModal">
+
+                    <i class="bi bi-plus-circle me-2"></i>
+                    Add Company
+
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+    <div>
         <p class="text-light mt-3" style="font-size: 12px;">SYSTEM</p>
     </div>
-     <div class="mt-2">
+    <div class="mt-3">
         <span class="text-warning fw-1">06</span>
-        <span><i class="bi  bi-person ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Users</b></span>
+        <span><i class="bi  bi-person ms-3" style="color:white;width:16px;height:16px;"></i><b
+                class="text-light ms-2 fw-1">Users</b></span>
     </div>
-     <div class="mt-2">
+    <div class="mt-3">
         <span class="text-warning fw-1">07</span>
-        <span><i class="bi  bi-bar-chart ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Reports</b></span>
+        <span><i class="bi  bi-bar-chart ms-3" style="color:white;width:16px;height:16px;"></i><b
+                class="text-light ms-2 fw-1">Reports</b></span>
     </div>
-     <div class="mt-2" style="min-height: 50vh;">
+    <div class="mt-3">
         <span class="text-warning fw-1">08</span>
-        <span><i class="bi  bi-gear ms-3" style="color:white;width:16px;height:16px;"></i><b class="text-light ms-2 fw-1">Setting</b></span>
+        <span><i class="bi  bi-gear ms-3" style="color:white;width:16px;height:16px;"></i><b
+                class="text-light ms-2 fw-1">Setting</b></span>
     </div>
-    <!-- divider -->
-    <div class="border-bottom border-light mt-5 "></div>
+    <div class="mt-auto">
+        <!-- divider -->
+    <div class="border-bottom border-light"></div>
     <div class="d-flex align-items-center mt-3">
         <!-- logo -->
         <div class="me-3">
@@ -80,16 +223,18 @@
             </span>
         </div>
         <!-- Brand information -->
-        <div class="mt-auto pt-3">
+        <div class="pt-3">
             <span class="text-white fw-bold">
-               Sana Ahmed
+                Sana Ahmed
             </span>
             <div class="d-flex align-items-center justify-content-center gap-1">
                 <span class="text-white" style="font-size: 10px;">Owner · 2 businesses</span>
             </div>
         </div>
-         <div class="ms-2">
-                <i class=" d-flex align-items-center justify-content-centerbi bi-box-arrow-right border rounded-circle px-2" style="color: white;width:40px; height:40px;"></i>
-            </div>
+        <div class="ms-2">
+            <i class=" d-flex align-items-center justify-content-centerbi bi-box-arrow-right border rounded-circle px-2"
+                style="color: white;width:40px; height:40px;"></i>
+        </div>
+    </div>
     </div>
 </div>

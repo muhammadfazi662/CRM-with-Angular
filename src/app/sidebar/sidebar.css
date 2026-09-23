@@ -5,6 +5,7 @@
     padding-left: 0;
     padding-right: 0;
     width: 232px;
+    height: 100vh;
 }
 button.dropdown-item {
      background-color: #142a20;
@@ -12,4 +13,17 @@ button.dropdown-item {
 }
 a{
     text-decoration: none;
+}
+/* for Tablet */
+@media(max-width:992px){
+    .left-sidebar{
+        width:210px;
+        height: 100vh;
+    }
+}
+@media(max-width:768px){
+    .left-sidebar{
+        width:65px !important;
+        height: 100vh;
+    }
 }

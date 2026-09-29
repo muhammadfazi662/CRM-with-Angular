@@ -11,6 +11,7 @@ import { SeedForm } from './seed-form/seed-form';
 import { PesticideForm } from './pesticide-form/pesticide-form';
 import { Customer } from './pages/customer/customer';
 import { CustomerForm } from './customer-form/customer-form';
+import { AddCompany } from './add-company/add-company';
 export const routes: Routes = [
     {path:'',
      component:Home
@@ -54,6 +55,9 @@ export const routes: Routes = [
     },{
         path:'customer-form',
         component:CustomerForm
+    },{
+        path:'add-company',
+        component:AddCompany
     }
 
 ];

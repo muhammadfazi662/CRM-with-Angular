@@ -2,3 +2,6 @@
 body{
     background-color: #f2f1ea;
 }
+.company-dialog .mat-mdc-dialog-surface {
+  padding-top: 0 !important;
+}
